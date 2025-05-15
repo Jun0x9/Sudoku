@@ -1,7 +1,6 @@
 #include "raylib.h" 
 #include <stdbool.h>
 #include <stdint.h>
-
 #define CELL_WIDTH 64 
 #define CELL_HEIGHT 64 
 #define ROWS 9
@@ -69,7 +68,7 @@ int main( void ){
 		//hovered cell
 		switch( state ) { 
 			case MAIN:
-				for(int i =0; i < 9; i++){ 
+				for(int i =0; i < 10; i++){ 
 					if(IsKeyPressed( num_keys[ i ] )){ 
 						board.cells[cell_y][cell_x] = i; 
 						if( i != board.solution[cell_y][cell_x] ) { 
